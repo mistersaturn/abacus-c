@@ -5,9 +5,12 @@
 #+PROPERTY:
 
 * Introduction
-Abacus-C is a simple virtual machine to teach the fundamentals of how a basic computer works. It was written in C language due to C's inherent low-level capabilities and also it serves the dual purpose of providing a good example of a program written in C to emulate a basic computer. It is based upon the Little Man Computer concept.
+Abacus-C is a simple virtual machine to teach the fundamentals of how a basic computer works.
+It was written in C language due to C's inherent low-level capabilities and also it serves the dual purpose of providing a good example of a program written in C to emulate a basic computer.
 
-** Example
+It is based upon the Little Man Computer concept.
+
+** Example Program
 Programs are entered using numeric instruction codes.
 A good example of this is the instruction sequence used to add one number to another number:
 
@@ -22,8 +25,14 @@ A good example of this is the instruction sequence used to add one number to ano
 -1
 #+END_EXAMPLE
 
-'8' is the opcode for INPUT. '10' is the memory register where the value of INPUT will be stored. Likewise, in the second line, '8' prompts for INPUT again and stores the value in memory register '11'. Then, '4' is called, which is the opcode to LOAD the value stored in memory register '10'. After that, opcode 1 is called, which is the opcode to ADD the value that was just loaded with the value stored in memory register '11'. The sum of that operation is then stored in memory register '12' using the opcode '3' to STORE the value.
-Finally, the '9' opcode is called to OUTPUT the data stored in memory register '12'.\\
+*** Step By Step
+
+1. '8' is the opcode for INPUT. '10' is the memory register where the value of INPUT will be stored.
+2. Likewise, in the second line, '8' prompts for INPUT again and stores the value in memory register '11'.
+3. Then, '4' is called, which is the opcode to LOAD the value stored in memory register '10'.
+4. After that, opcode 1 is called, which is the opcode to ADD the value that was just loaded with the value stored in memory register '11'.
+5. The sum of that operation is then stored in memory register '12' using the opcode '3' to STORE the value.
+6. Finally, the '9' opcode is called to OUTPUT the data stored in memory register '12'.
 
 To terminate the virtual machine, a '000' opcode is used to HALT the program and system, and the escape code '-1' exits.
 
