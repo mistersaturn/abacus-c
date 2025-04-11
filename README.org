@@ -8,7 +8,7 @@
 Abacus-C is a simple virtual machine to teach the fundamentals of how a basic computer works.
 It was written in C language due to C's inherent low-level capabilities and also it serves the dual purpose of providing a good example of a program written in C to emulate a basic computer.
 
-It is based upon the Little Man Computer concept.
+It is loosely based upon the Little Man Computer concept.
 
 ** Example Program
 Programs are entered using numeric instruction codes.
@@ -59,7 +59,7 @@ Understanding opcodes is crucial for grasping how low-level programming works, a
 *** Operands
 The operand is the part of the instruction that specifies the data or memory location to be used in the operation. It is represented by the last two digits of the instruction. For instance, in the instruction 101, the operand is 01, which indicates the memory location from which to retrieve the value to be added to the accumulator.
 
-**** Note:
+**** -- Note:
 The usage of Opcodes and Operands is intentional in an attempt to facilitate a deeper understanding of how the handling of the input works. However, Abacus-C can be further extended by adding mnemonic codes and constant variable handling.
 
 * Code Example
