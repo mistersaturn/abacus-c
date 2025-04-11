@@ -5,16 +5,11 @@
 #+PROPERTY:
 
 * Introduction
-Abacus-C is a simple virtual machine to teach the fundamentals of how a basic computer works.\\
-It was written in C language due to C's inherent low-level capabilities and also it serves the\\
-dual purpose of providing a good example of a program written in C to emulate a basic computer.\\
-\\
-It is based upon the Little Man Computer concept.\\
-\\
+Abacus-C is a simple virtual machine to teach the fundamentals of how a basic computer works. It was written in C language due to C's inherent low-level capabilities and also it serves the dual purpose of providing a good example of a program written in C to emulate a basic computer. It is based upon the Little Man Computer concept.
 
 ** Example
-Programs are entered using numeric instruction codes.\\
-A good example of this is the instruction sequence used to add one number to another number:\\
+Programs are entered using numeric instruction codes.
+A good example of this is the instruction sequence used to add one number to another number:
 
 #+BEGIN_EXAMPLE
 810
