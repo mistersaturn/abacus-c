@@ -36,6 +36,30 @@ A good example of this is the instruction sequence used to add one number to ano
 
 To terminate the virtual machine, a '000' opcode is used to HALT the program and system, and the escape code '-1' exits.
 
+** Opcodes / Operands
+
+*** Opcodes
+ The opcode (operation code) is the part of the instruction that specifies the operation to be performed. In our program, opcodes are represented by the first two digits of a three-digit instruction. For example, in the instruction 101, the opcode is 1, which corresponds to the ADD operation. Here is a list of the opcodes:
+
+#+BEGIN_EXAMPLE
+    1 (ADD): Adds the value at the specified memory location to the accumulator.
+    2 (SUB): Subtracts the value at the specified memory location from the accumulator.
+    3 (STORE): Stores the current value of the accumulator into the specified memory location.
+    4 (LOAD): Loads a value from the specified memory location into the accumulator.
+    5 (JUMP): Sets the program counter to a specified location, effectively jumping to that instruction.
+    6 (JUMP IF ZERO): Jumps to a specified location if the accumulator is zero.
+    7 (JUMP IF POSITIVE): Jumps to a specified location if the accumulator is positive.
+    8 (INPUT): Prompts the user to input a number and stores it in the specified memory location.
+    9 (OUTPUT): Outputs the value stored in the specified memory location.
+    0 (HALT): Terminates the program.
+#+END_EXAMPLE
+
+Understanding opcodes is crucial for grasping how low-level programming works, as they form the basis of machine-level instructions that the CPU executes.
+
+*** Operands
+The operand is the part of the instruction that specifies the data or memory location to be used in the operation. It is represented by the last two digits of the instruction. For instance, in the instruction 101, the operand is 01, which indicates the memory location from which to retrieve the value to be added to the accumulator.
+
+
 * Code Example
 
 ** Header
