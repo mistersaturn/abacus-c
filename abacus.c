@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MEMORY_SIZE 100
+#define MEMORY_SIZE 256
 #define INSTRUCTION_SIZE 4
 
 int memory[MEMORY_SIZE] = {0}; // Memory array initialized to zero
